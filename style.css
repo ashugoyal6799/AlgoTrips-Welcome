@@ -254,71 +254,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   margin-bottom: 1.8rem;
   position: relative;
-}
-
-.logo i {
-  font-size: 3.5rem;
-  background: linear-gradient(
-    45deg,
-    #ff6b6b,
-    #4ecdc4,
-    #45b7d1,
-    #96ceb4,
-    #feca57
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 8s ease infinite, bounce 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px rgba(255, 107, 107, 0.5));
 }
 
 .logo h1 {
   font-size: 3.2rem;
   font-weight: 700;
-  background: linear-gradient(
-    45deg,
-    #ff6b6b,
-    #4ecdc4,
-    #45b7d1,
-    #96ceb4,
-    #feca57,
-    #ff9ff3
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 10s ease infinite, textGlow 4s ease-in-out infinite;
+  animation: textGlow 4s ease-in-out infinite;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(5deg);
-  }
+.algo {
+  color: #64b5f6;
+  text-shadow: 0 0 20px rgba(100, 181, 246, 0.8);
+}
+
+.trips {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 @keyframes textGlow {
   0%,
   100% {
-    filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.7));
+    filter: drop-shadow(0 0 20px rgba(100, 181, 246, 0.7));
   }
   25% {
-    filter: drop-shadow(0 0 20px rgba(78, 205, 196, 0.7));
+    filter: drop-shadow(0 0 25px rgba(100, 181, 246, 0.9));
   }
   50% {
-    filter: drop-shadow(0 0 20px rgba(69, 183, 209, 0.7));
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
   }
   75% {
-    filter: drop-shadow(0 0 20px rgba(254, 202, 87, 0.7));
+    filter: drop-shadow(0 0 25px rgba(100, 181, 246, 0.9));
   }
 }
 
@@ -486,10 +454,6 @@ body {
 
   .logo h1 {
     font-size: 2.2rem;
-  }
-
-  .logo i {
-    font-size: 2.8rem;
   }
 
   .coming-soon h2 {
